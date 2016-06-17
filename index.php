@@ -1,1 +1,1 @@
-<?PHP include_once("index.html"); ?>
+<?PHP include_once("splash.html"); ?>
