@@ -33,7 +33,6 @@ var weekNum = moment(new Date().toJSON().slice(0,10)).week();
 
 // get data from form
 $("#myForm").submit(function(){
-	console.log('works');
 	var start = document.getElementById('startDate').value;
 	var calories = document.getElementById('calories').value;
 	var calories = parseInt(calories)
@@ -42,7 +41,7 @@ $("#myForm").submit(function(){
 	var weekday = moment(start, "MMMM Do, YYYY").week();
 	//weird bug when moment JS converts the date is off my one week
 	var weekday = weekday - 1;
-	
+
 	mealRef.push({
        user: userID,
        startDate: start,
@@ -51,12 +50,11 @@ $("#myForm").submit(function(){
 	   foodGroup: foodGroup,
 	   week: weekday
    })
-	
+
 })
 
 //setting calorie goals
 $("#submitGoals").on('click',function(){
-	console.log('clicked');
 	var goalWeeklyCal = document.getElementById('mWeeklyCalories').value;
 	var goalMeat = document.getElementById('mMeats').value;
 	var goalGrain = document.getElementById('mGrains').value;
@@ -64,8 +62,6 @@ $("#submitGoals").on('click',function(){
 	var goalSweets = document.getElementById('mOtherFoods').value;
 	var goalVeg = document.getElementById('mVegetables').value;
 	var goalFruit = document.getElementById('mFruits').value;
-	console.log(goalVeg, goalDairy, goalVeg, goalSweets, goalFruit);
-	//you can only update goals
 	goalRef.update({
 			goalVeg: goalVeg,
 			userID: userID,
