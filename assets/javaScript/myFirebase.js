@@ -72,6 +72,7 @@ $("#submitGoals").on('click',function(){
 			goalFruit: goalFruit
 	})
 	$('#successMessage').text('Your goals have been updated!');
+	return false;
 })
 
 //display meal items on the page. Query then append DOM

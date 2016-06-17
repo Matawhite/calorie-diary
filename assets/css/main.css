@@ -49,6 +49,11 @@ h3{
 	padding: 8px;
 }
 
+.searchResult:hover{
+	background-color: #135135;
+	cursor: pointer;
+}
+
 #goalSummary{
 	height: 450px;
 	width: 300px;
