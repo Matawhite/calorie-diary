@@ -1,4 +1,4 @@
-var myFireBase = new Firebase('https://fb-calorie-tracker.firebaseio.com/');
+var myFireBase = new Firebase('https://fb-calorie-tracker.firebaseio.com');
 //create user node
 var userRef = myFireBase.child("users");
 
@@ -15,7 +15,6 @@ if(userID ===  null){
 		})
  }
 
-var myFireBase = new Firebase('https://fb-calorie-tracker.firebaseio.com/');
 //create user node
 var userRef = myFireBase.child("users");
 
