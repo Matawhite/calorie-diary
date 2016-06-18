@@ -49,7 +49,6 @@ $("#myForm").submit(function(){
 	   foodGroup: foodGroup,
 	   week: weekday
    })
-
 })
 
 //setting calorie goals
