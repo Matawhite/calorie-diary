@@ -8,7 +8,7 @@ $(document).on("ready", function(){
         goalQuery.on('value', function(snapshot){
 
             var grains = snapshot.val().goalGrain;
-            var meat = snapshot.val().goalGrain;
+            var meat = snapshot.val().goalMeat;
             var fruit = snapshot.val().goalFruit;
             var veg = snapshot.val().goalVeg;
             var dairy = snapshot.val().goalDairy;
